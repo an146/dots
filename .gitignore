@@ -18,6 +18,7 @@
 .mc/
 .mozilla/
 .Private
+.pentadactyl/
 .pulse/
 .pulse-cookie
 .recently-used.xbel
