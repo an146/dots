@@ -1,0 +1,10 @@
+.aptitude/
+.bash_history
+.bash_logout
+.lesshst
+.mc/
+.silc/
+.viminfo
+.vim-vundle/
+
+src/
