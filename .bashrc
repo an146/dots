@@ -76,6 +76,11 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# local aliases, not under version-control
+if [ -f ~/.local/bash_aliases ]; then
+    . ~/.local/bash_aliases
+fi
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     eval "`dircolors -b`"
