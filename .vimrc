@@ -56,6 +56,10 @@ map <F7> :cnext<CR>
 map <F8> :clist<CR>
 map <F9> :clist!<CR>
 
+map <C-F> :CommandT<CR>
+
+:set wildignore+=*.o,*.obj,.git,*.beam
+
 " these were used by vimerl
 " let g:erlangFold=1
 " let g:erlangManSuffix='erl'

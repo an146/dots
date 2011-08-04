@@ -5,7 +5,9 @@
 .dbus/
 .dmrc
 .ecryptfs
+.erlang.cookie
 .esd_auth
+.evolution/
 .fontconfig/
 .gconf/
 .gconfd/
@@ -17,18 +19,22 @@
 .lesshst
 .mc/
 .mozilla/
-.Private
 .pentadactyl/
+.pki/
+.Private
 .pulse/
 .pulse-cookie
 .recently-used.xbel
 .silc/
 .ssh/
 .sudo_as_admin_successful
+.thumbnails/
 .vboxclient*
 .vboxclient*
 .viminfo
 .vim-vundle/
+.xinput.d/
+.xscreensaver-getimage.cache
 .xsession*
 
 src/

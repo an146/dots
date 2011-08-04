@@ -22,3 +22,5 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 export EDITOR=vim
+export LANGUAGE="en_DK:en_US:en"
+export LANG="en_DK.utf8"
