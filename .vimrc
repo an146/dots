@@ -57,6 +57,10 @@ map <F8> :clist<CR>
 map <F9> :clist!<CR>
 
 map <C-F> :CommandT<CR>
+map <Leader>f :CommandTFlush<CR>
+
+map <Leader>v :split ~/.vimrc<CR>
+map <Leader>s :Gstatus<CR>
 
 :set wildignore+=*.o,*.obj,.git,*.beam
 
