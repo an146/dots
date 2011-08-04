@@ -15,8 +15,10 @@
 .gksu.lock
 .gnome2/
 .gtk-bookmarks
+.htoprc
 .ICEauthority
 .lesshst
+.local/
 .mc/
 .mozilla/
 .pentadactyl/
