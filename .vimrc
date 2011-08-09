@@ -48,7 +48,9 @@ set autowrite
 nmap ,l : set invlist<CR>
 
 " Make 
-nmap ,m :make!<CR>
+nmap ,m :make<CR>
+nmap ,M :make!<CR>
+
 " Function key settings - 'make'-shortcuts
 map <F5> :cc<CR>
 map <F6> :cprev<CR>
