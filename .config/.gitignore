@@ -2,10 +2,12 @@ desktop-couch/
 enchant/
 gnome-disk-utility
 gnome-session
+gtk-2.0/
 gwibber/
 ibus
 metacity
 session-state
+Trolltech.conf
 update-notifier
 user-dirs.dirs
 user-dirs.locale
