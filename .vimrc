@@ -64,7 +64,12 @@ map <Leader>f :CommandTFlush<CR>
 map <Leader>v :split ~/.vimrc<CR>
 map <Leader>s :Gstatus<CR>
 
-:set wildignore+=*.o,*.obj,.git,*.beam
+map <C-j> <C-w>j<C-w>_
+map <C-k> <C-w>k<C-w>_
+
+:set wildignore+=*.o,*.obj,*.beam,*.dump,.git,ebin,ct.results
+
+match ErrorMsg '\%>80v.\+'
 
 " these were used by vimerl
 " let g:erlangFold=1
