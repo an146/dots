@@ -1,6 +1,7 @@
 .aptitude/
 .bash_history
 .bash_logout
+.byobu
 .cache/
 .dbus/
 .dmrc
