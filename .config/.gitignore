@@ -1,3 +1,6 @@
+autostart/
+compiz-1/
+dconf/
 desktop-couch/
 enchant/
 gnome-disk-utility
@@ -8,6 +11,7 @@ ibus
 metacity
 session-state
 Trolltech.conf
+ubuntuone/
 update-notifier
 user-dirs.dirs
 user-dirs.locale

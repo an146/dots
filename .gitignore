@@ -6,14 +6,17 @@
 .dmrc
 .ecryptfs
 .erlang.cookie
+.erlang.hosts
 .esd_auth
 .evolution/
 .fontconfig/
 .gconf/
 .gconfd/
 .gitignores/
+.gitk
 .gksu.lock
 .gnome2/
+.gstreamer-0.10/
 .gtk-bookmarks
 .htoprc
 .ICEauthority
@@ -29,6 +32,7 @@
 .recently-used.xbel
 .silc/
 .Skype/
+.slocdata/
 .ssh/
 .sudo_as_admin_successful
 .thumbnails/
@@ -36,6 +40,7 @@
 .vboxclient*
 .viminfo
 .vim-vundle/
+.wireshark/
 .xinput.d/
 .xscreensaver-getimage.cache
 .xsession*
