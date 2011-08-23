@@ -67,7 +67,11 @@ map <Leader>s :Gstatus<CR>
 map <C-j> <C-w>j<C-w>_
 map <C-k> <C-w>k<C-w>_
 
-:set wildignore+=*.o,*.obj,*.beam,*.dump,.git,ebin,ct.results
+set wildignore+=*.o,*.obj,*.beam,*.dump,.git,ct.results,doc,ebin
+
+" Snippets should be where they should be, not in .vim/bundle/vundle
+let g:snippets_dir=glob("~/.vim/snippets")
+let g:snipmgr_snippets_dir=glob("~/.vim/snippets")
 
 match ErrorMsg '\%>80v.\+'
 
