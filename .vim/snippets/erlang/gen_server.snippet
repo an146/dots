@@ -27,16 +27,21 @@ start_link(ServerName, Opts) ->
     gen_server:start_link(ServerName, ?MODULE, Opts, []).
 
 %% @doc Start the server process, registered with default name.
-%% @equiv start_link({local, fact_processor}, Master)
-start_link(Master) ->
-    start_link({local, ?SERVER}, Master).
+%% @equiv start_link({local, {@module}}, Opts)
+start_link(Opts) ->
+    start_link({local, ?SERVER}, Opts).
 
 
 %%====================================================================
 %% gen_server callbacks
 %%====================================================================
 
+-record(state, {
+    dummy = []
+}).
+
 %%--------------------------------------------------------------------
+%% @hidden
 %% Function: init(Args) -> {ok, State} |
 %%                         {ok, State, Timeout} |
 %%                         ignore               |
@@ -45,11 +50,12 @@ start_link(Master) ->
 %%--------------------------------------------------------------------
 %%
 init(_Opts) ->
-    State = [],
+    State = #state{},
     {ok, State}.
 
 
 %%--------------------------------------------------------------------
+%% @hidden
 %% Function: terminate(Reason, State) -> void()
 %% Description: This function is called by a gen_server when it is about to
 %% terminate. It should be the opposite of Module:init/1 and do any necessary
@@ -62,6 +68,7 @@ terminate(_Reason, _S) ->
 
 
 %%%--------------------------------------------------------------------
+%% @hidden
 %% Function: %% handle_call(Request, From, State) -> {reply, Reply, State} |
 %%                                      {reply, Reply, State, Timeout} |
 %%                                      {noreply, State} |
@@ -77,6 +84,7 @@ handle_call(Call, _From, S) ->
 
 
 %%--------------------------------------------------------------------
+%% @hidden
 %% Function: handle_cast(Msg, State) -> {noreply, State} |
 %%                                      {noreply, State, Timeout} |
 %%                                      {stop, Reason, State}
@@ -90,6 +98,7 @@ handle_cast(Cast, S) ->
 
 
 %%--------------------------------------------------------------------
+%% @hidden
 %% Function: handle_info(Info, State) -> {noreply, State} |
 %%                                       {noreply, State, Timeout} |
 %%                                       {stop, Reason, State}
@@ -102,15 +111,10 @@ handle_info(Info, S) ->
 
 
 %%--------------------------------------------------------------------
+%% @hidden
 %% Func: code_change(OldVsn, State, Extra) -> {ok, NewState}
 %% Description: Convert process state when code is changed
 %%--------------------------------------------------------------------
 %%
 code_change(_OldVsn, State, _Extra) ->
     {ok, State}.
-
-
-%%====================================================================
-%% Internal functions
-%%====================================================================
-
