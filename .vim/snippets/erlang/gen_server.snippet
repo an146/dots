@@ -63,7 +63,7 @@ init(_Opts) ->
 %% The return value is ignored.
 %%--------------------------------------------------------------------
 %%
-terminate(_Reason, _S) ->
+terminate(_Reason, _State) ->
     true.
 
 
@@ -79,8 +79,8 @@ terminate(_Reason, _S) ->
 %%--------------------------------------------------------------------
 %% Anything else generates an error log message and response.
 %%
-handle_call(Call, _From, S) ->
-    {reply, {error, invalid_call, Call}, S}.
+handle_call(Call, _From, State) ->
+    {reply, {error, invalid_call, Call}, State}.
 
 
 %%--------------------------------------------------------------------
@@ -92,9 +92,9 @@ handle_call(Call, _From, S) ->
 %%--------------------------------------------------------------------
 %% Anything else generates an error log message
 %%
-handle_cast(Cast, S) ->
+handle_cast(Cast, State) ->
     io:format("unexpected cast: ~p~n", Cast),
-    {noreply, S}.
+    {noreply, State}.
 
 
 %%--------------------------------------------------------------------
@@ -105,9 +105,9 @@ handle_cast(Cast, S) ->
 %% Description: Handling all non call/cast messages
 %%--------------------------------------------------------------------
 %%
-handle_info(Info, S) ->
+handle_info(Info, State) ->
     io:format("unexpected message: ~p~n", Info),
-    {noreply, S}.
+    {noreply, State}.
 
 
 %%--------------------------------------------------------------------
