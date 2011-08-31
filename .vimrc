@@ -48,8 +48,11 @@ set autowrite
 nmap ,l : set invlist<CR>
 
 " Make 
-nmap ,m :make<CR>
-nmap ,M :make!<CR>
+nmap ,m :make test<CR>
+nmap ,M :make! test<CR>
+
+let Tlist_GainFocus_On_ToggleOpen = 1
+map <F4> :TlistToggle<CR>
 
 " Function key settings - 'make'-shortcuts
 map <F5> :cc<CR>
@@ -74,6 +77,8 @@ let g:snippets_dir=glob("~/.vim/snippets")
 let g:snipmgr_snippets_dir=glob("~/.vim/snippets")
 
 match ErrorMsg '\%>80v.\+'
+
+set grepprg=git\ grep\ -n
 
 " these were used by vimerl
 " let g:erlangFold=1
