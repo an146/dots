@@ -69,6 +69,8 @@ map <Leader>s :Gstatus<CR>
 
 map <C-j> <C-w>j<C-w>_
 map <C-k> <C-w>k<C-w>_
+imap <C-j> <ESC><C-w>j<C-w>_
+imap <C-k> <ESC><C-w>k<C-w>_
 
 set wildignore+=*.o,*.obj,*.beam,*.dump,.git,ct.results,doc,ebin
 
