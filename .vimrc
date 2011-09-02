@@ -4,7 +4,6 @@ set noswapfile
 filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
-Bundle 'gmarik/vundle'
 source ~/.vim/bundles.vim
 filetype plugin indent on
 syntax on
