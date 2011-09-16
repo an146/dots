@@ -1,10 +1,13 @@
 set nocompatible
 set noswapfile
 
-filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
-source ~/.vim/bundles.vim
+if isdirectory(expand("~/.vim/bundle/vundle"))
+    filetype off
+    set rtp+=~/.vim/bundle/vundle
+    call vundle#rc()
+    source ~/.vim/bundles.vim
+endif
+
 filetype plugin indent on
 syntax on
 
