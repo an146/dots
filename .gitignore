@@ -41,9 +41,12 @@
 .vboxclient*
 .viminfo
 .vim-vundle/
+.VirtualBox/
 .wireshark/
+.Xauthority
 .xinput.d/
 .xscreensaver-getimage.cache
 .xsession*
 
 src/
+vm/
