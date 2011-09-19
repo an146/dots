@@ -19,11 +19,13 @@
 .gnome2/
 .gstreamer-0.10/
 .gtk-bookmarks
+.gtkrc-2.0
 .htoprc
 .ICEauthority
 .lesshst
 .local/
 .mc/
+.mhwaveedit/
 .mozilla/
 .pentadactyl/
 .pki/
