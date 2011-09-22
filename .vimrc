@@ -81,6 +81,7 @@ let g:snippets_dir=glob("~/.vim/snippets")
 let g:snipmgr_snippets_dir=glob("~/.vim/snippets")
 
 match ErrorMsg '\%>80v.\+'
+autocmd BufNewFile,BufRead *.erl match ErrorMsg '\%>80v.\+'
 
 set grepprg=git\ grep\ -n
 
