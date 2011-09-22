@@ -1,0 +1,31 @@
+-compile(export_all).
+-include("ct.hrl").
+
+% Specify a list of all test functions
+all() -> [test].
+
+init_per_suite(Config) ->
+    Config.
+
+end_per_suite(Config) ->
+    Config.
+
+init_per_group(_Group, Config) ->
+    Config.
+
+end_per_group(_Group, Config) ->
+    Config.
+
+init_per_testcase(_TestCase, Config) ->
+    Config.
+
+end_per_testcase(_TestCase, Config) ->
+    Config.
+
+
+%%====================================================================
+%% Tests
+%%====================================================================
+
+test(_Config) ->
+    ok.
