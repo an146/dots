@@ -72,4 +72,7 @@ map Ю >
 " And hide the 'No mapping found' message
 redraw
 
+map -modes=n,v j -builtin 10j
+map -modes=n,v k -builtin 10k
+
 " vim: set ft=pentadactyl:
