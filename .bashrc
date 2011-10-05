@@ -63,6 +63,9 @@ else
 fi
 unset color_prompt force_color_prompt
 
+# standard Arch prompt
+#PS1='[\u@\h \W]\$ '
+
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
