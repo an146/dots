@@ -1,3 +1,5 @@
+[ -r ~/.local/xinitrc ] && exec /bin/sh ~/.local/xinitrc
+
 kbdd
 xmodmap ~/.xmodmaprc
 setxkbmap -option terminate:ctrl_alt_bksp
