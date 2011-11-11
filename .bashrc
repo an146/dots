@@ -7,6 +7,7 @@
 
 [ -d /opt/erlang/current/bin ] && {
     export PATH="$PATH:/opt/erlang/current/bin"
+    export MANPATH="$MANPATH:/opt/erlang/current/lib/erlang/man"
 }
 export EDITOR=vim
 

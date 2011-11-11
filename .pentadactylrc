@@ -75,4 +75,6 @@ redraw
 map -modes=n,v j -builtin 10j
 map -modes=n,v k -builtin 10k
 
+autocmd PageLoad meebo.com js getBrowser().pinTab(getBrowser().mCurrentTab);
+
 " vim: set ft=pentadactyl:

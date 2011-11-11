@@ -53,6 +53,10 @@ nmap ,l : set invlist<CR>
 nmap ,m :make test<CR>
 nmap ,M :make! test<CR>
 
+" Swap ' and `, as exact mark jump is more used
+nnoremap ' `
+nnoremap ` '
+
 let Tlist_GainFocus_On_ToggleOpen = 1
 map <F4> :TlistToggle<CR>
 
@@ -80,8 +84,8 @@ set wildignore+=*.o,*.obj,*.beam,*.dump,.git,ct.results,doc,ebin
 let g:snippets_dir=glob("~/.vim/snippets")
 let g:snipmgr_snippets_dir=glob("~/.vim/snippets")
 
-match ErrorMsg '\%>80v.\+'
-autocmd BufNewFile,BufRead *.erl match ErrorMsg '\%>80v.\+'
+" match ErrorMsg '\%>80v.\+'
+" autocmd BufNewFile,BufRead *.erl match ErrorMsg '\%>80v.\+'
 
 set grepprg=git\ grep\ -n
 

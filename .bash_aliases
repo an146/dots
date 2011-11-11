@@ -7,6 +7,7 @@ alias y='yaourt'
 alias vi='vim'
 which hub >/dev/null 2>&1 && alias git='hub'
 alias rc.d='sudo rc.d'
+alias netcfg='sudo netcfg'
 alias mp='mplayer'
 
 #erlang shell is broken, fix it if we don't already use local script
