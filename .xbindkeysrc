@@ -56,11 +56,14 @@
 "gnome-terminal --maximize"
   Mod1 + Return
 
-"amixer set PCM 2dB+"
+"amixer set Master 3000+"
   Mod1 + equal
 
-"amixer set PCM 2dB-"
+"amixer set Master 3000-"
   Mod1 + minus
+
+"pavucontrol"
+  Mod1 + v
 
 "alarm snooze"
   Mod1 + F12
