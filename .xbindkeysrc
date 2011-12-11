@@ -50,16 +50,22 @@
 #"xterm"
 #  control + b:2
 
+"firefox"
+  Mod1 + control + w
+
+"gmrun"
+  Mod1 + F2
+
 "killall -HUP xbindkeys"
   Mod1 + r
 
 "gnome-terminal --maximize"
   Mod1 + Return
 
-"amixer set Master 3000+"
+"amixer set Master 1500+"
   Mod1 + equal
 
-"amixer set Master 3000-"
+"amixer set Master 1500-"
   Mod1 + minus
 
 "pavucontrol"

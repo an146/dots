@@ -6,4 +6,5 @@ setxkbmap -option grp:alt_shift_toggle -variant ",winkeys" us,ru
 setxkbmap -option grp_led:scroll
 xmodmap ~/.xmodmaprc
 xbindkeys
-exec ck-launch-session gnome-session
+xfce4-panel &
+exec ck-launch-session openbox-session
