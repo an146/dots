@@ -5,6 +5,8 @@
 	co = checkout
 	br = branch
 	sh = !~/.local/bin/git-sh
+	lgg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	l = "!f() { git log --first-parent --pretty=format:'%Cred%h%Creset|%s|%C(bold blue):%Creset|%C(yellow)!%d%Creset' --abbrev-commit --date=relative $@ | awk -F '|' '{ sub(/! ?/, \"\", $4); printf \"%s %-60s %s %s\\n\", $1, $2, $3, $4 }'; }; f"
 [color]
 	branch = auto
 	diff = auto
