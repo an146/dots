@@ -9,5 +9,7 @@ Bundle 'SnipMgr'
 Bundle 'taglist.vim'
 Bundle 'SmartCase'
 Bundle 'TeTrIs'
+Bundle 'matrix.vim--Yang'
+Bundle 'vim-coffee-script'
 
 " Bundle 'oscarh/vimerl'
