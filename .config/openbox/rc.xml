@@ -254,6 +254,9 @@
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
+    <keybind key="A-F10">
+      <action name="Maximize"/>
+    </keybind>
     <keybind key="A-Escape">
       <action name="Lower"/>
       <action name="FocusToBottom"/>
