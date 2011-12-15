@@ -1,1 +1,20 @@
-.local/gitconfig
+[alias]
+	st = status
+	ci = commit
+	di = diff
+	co = checkout
+	br = branch
+	sh = !~/.local/bin/git-sh
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	sh = auto
+#[color "sh"]
+        #branch = yellow reverse
+        #workdir = blue bold
+        #dirty = red
+[user]
+	name = Anton Novikov
+	email = an146@ya.ru
