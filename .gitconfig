@@ -14,9 +14,18 @@
 	status = auto
 	sh = auto
 #[color "sh"]
-        #branch = yellow reverse
-        #workdir = blue bold
-        #dirty = red
+	#branch = yellow reverse
+	#workdir = blue bold
+	#dirty = red
 [user]
 	name = Anton Novikov
 	email = an146@ya.ru
+#[sendemail]
+#	smtpserver = /usr/bin/msmtp
+#
+[sendemail]
+	smtpencryption = tls
+	smtpserver = smtp.gmail.com
+	smtpuser = random.plant@gmail.com
+	smtpserverport = 587
+	suppressfrom = yes

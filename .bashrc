@@ -9,6 +9,8 @@
     export PATH="$PATH:/opt/erlang/current/bin"
     export MANPATH="$MANPATH:/opt/erlang/current/lib/erlang/man"
 }
+export PATH="$PATH:/home/anton/.gem/ruby/1.9.1/bin"
+
 export EDITOR=vim
 
 # don't put duplicate lines in the history. See bash(1) for more options

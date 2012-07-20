@@ -89,6 +89,10 @@ let g:snipmgr_snippets_dir=glob("~/.vim/snippets")
 
 set grepprg=git\ grep\ -n
 
+set tags+=~/src/aur/tags
+
 " these were used by vimerl
 " let g:erlangFold=1
 " let g:erlangManSuffix='erl'
+
+au BufNewFile,BufRead *.md set ft=markdown

@@ -11,5 +11,6 @@ Bundle 'SmartCase'
 Bundle 'TeTrIs'
 Bundle 'matrix.vim--Yang'
 Bundle 'vim-coffee-script'
+Bundle 'md-vim'
 
 " Bundle 'oscarh/vimerl'
