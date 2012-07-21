@@ -11,7 +11,9 @@ endif
 filetype plugin indent on
 syntax on
 
-colorscheme desert
+colorscheme desert256
+highlight Pmenu ctermfg=1 ctermbg=4 guibg=grey30
+set guifont=Monospace\ 11
 
 " Tabs & indenting
 set tabstop=8
@@ -96,3 +98,5 @@ set tags+=~/src/aur/tags
 " let g:erlangManSuffix='erl'
 
 au BufNewFile,BufRead *.md set ft=markdown
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_classes_in_global = 1

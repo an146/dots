@@ -3,9 +3,10 @@
 perWindowLayoutD
 setxkbmap -option terminate:ctrl_alt_bksp
 setxkbmap -option grp:caps_toggle -variant ",winkeys" us,ru
+#setxkbmap -option grp:alt_shift_toggle -variant ",winkeys" us,ru
 setxkbmap -option grp_led:scroll
-xmodmap ~/.xmodmaprc
-xbindkeys
+#xmodmap ~/.xmodmaprc
+#xbindkeys
 #xfce4-panel &
 #exec ck-launch-session openbox-session
-exec i3
+exec wmii
