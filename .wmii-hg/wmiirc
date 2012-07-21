@@ -5,7 +5,7 @@ wmiiscript=wmiirc # For wmii.sh
 
 
 # Configuration Variables
-MODKEY=Mod4
+MODKEY=Mod1
 UP=k
 DOWN=j
 LEFT=h
@@ -20,10 +20,10 @@ export WMII_NORMCOLORS='#000000 #c1c48b #81654f'
 export WMII_FOCUSCOLORS='#000000 #81654f #000000'
 
 export WMII_BACKGROUND='#333333'
-export WMII_FONT='-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
+export WMII_FONT='-*-fixed-medium-r-*-*-18-*-*-*-*-*-*-*'
 
 set -- $(echo $WMII_NORMCOLORS $WMII_FOCUSCOLORS)
-export WMII_TERM="xterm"
+export WMII_TERM="lxterminal"
 
 # Ask about MODKEY on first run
     if ! test -d "${WMII_CONFPATH%%:*}"; then

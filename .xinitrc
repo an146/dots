@@ -9,4 +9,4 @@ setxkbmap -option grp_led:scroll
 #xbindkeys
 #xfce4-panel &
 #exec ck-launch-session openbox-session
-exec wmii
+exec i3
