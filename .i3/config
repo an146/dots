@@ -10,21 +10,36 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod1
+set $term lxterminal
+set $font -*-fixed-medium-r-*-*-18-*-*-*-*-*-*-*
+
+set $i Im
+set $o sOund
+set $u mUsic
+set $w Web
 
 # font for window titles. ISO 10646 = Unicode
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+font $font
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# assignments
+assign [class="Firefox"] $w
+assign [class="Pidgin"] $i
+assign [class="Audacious"] $u
+assign [class="Gnome-alsamixer"] $o
+assign [class="Pavucontrol"] $o
+
 # start a terminal
-bindsym $mod+Return exec lxterminal
+bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym $mod+Shift+C kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+p exec dmenu_run -fn $font # -b
 
 # change focus
 bindsym $mod+j focus left
@@ -61,7 +76,7 @@ bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, default)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+t layout tabbed
 bindsym $mod+e layout default
 
 # toggle tiling / floating
@@ -87,6 +102,10 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+bindsym $mod+i workspace $i
+bindsym $mod+o workspace $o
+bindsym $mod+u workspace $u
+bindsym $mod+w workspace $w
 
 # move focused container to workspace
 bindsym $mod+Shift+exclam move container to workspace 1
@@ -99,13 +118,19 @@ bindsym $mod+Shift+ampersand move container to workspace 7
 bindsym $mod+Shift+asterisk move container to workspace 8
 bindsym $mod+Shift+parenleft move container to workspace 9
 bindsym $mod+Shift+parenright move container to workspace 10
+bindsym $mod+Shift+I move container to workspace $i
+bindsym $mod+Shift+O move container to workspace $o
+bindsym $mod+Shift+U move container to workspace $u
+bindsym $mod+Shift+W move container to workspace $w
 
 # reload the configuration file
 #bindsym $mod+Shift+C reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+R restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+E exit
+# bindsym $mod+Shift+E exit
+
+bindsym $mod+Shift+E exec gvim ~/.i3/config
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -131,7 +156,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
+# bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
