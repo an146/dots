@@ -15,4 +15,4 @@ audacious &
 gnome-alsamixer &
 pavucontrol &
 
-exec i3
+exec i3 2>&1 >> ~/.i3/log

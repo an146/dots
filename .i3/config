@@ -17,6 +17,7 @@ set $i Im
 set $o sOund
 set $u mUsic
 set $w Web
+set $j jack0
 
 # font for window titles. ISO 10646 = Unicode
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -31,6 +32,7 @@ assign [class="Pidgin"] $i
 assign [class="Audacious"] $u
 assign [class="Gnome-alsamixer"] $o
 assign [class="Pavucontrol"] $o
+assign [class="Qjackctl"] $j
 
 # start a terminal
 bindsym $mod+Return exec $term
@@ -42,10 +44,10 @@ bindsym $mod+Shift+C kill
 bindsym $mod+p exec dmenu_run -fn $font # -b
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -54,10 +56,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+J move left
-bindsym $mod+Shift+K move down
-bindsym $mod+Shift+L move up
-bindsym $mod+Shift+colon move right
+bindsym $mod+Shift+H move left
+bindsym $mod+Shift+J move down
+bindsym $mod+Shift+K move up
+bindsym $mod+Shift+L move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -66,7 +68,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+#bindsym $mod+h split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -101,7 +103,7 @@ bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+0 workspace $j
 bindsym $mod+i workspace $i
 bindsym $mod+o workspace $o
 bindsym $mod+u workspace $u
@@ -117,7 +119,7 @@ bindsym $mod+Shift+asciicircum move container to workspace 6
 bindsym $mod+Shift+ampersand move container to workspace 7
 bindsym $mod+Shift+asterisk move container to workspace 8
 bindsym $mod+Shift+parenleft move container to workspace 9
-bindsym $mod+Shift+parenright move container to workspace 10
+bindsym $mod+Shift+parenright move container to workspace $j
 bindsym $mod+Shift+I move container to workspace $i
 bindsym $mod+Shift+O move container to workspace $o
 bindsym $mod+Shift+U move container to workspace $u
