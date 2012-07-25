@@ -14,5 +14,6 @@ audacious &
 # Sound stuff
 gnome-alsamixer &
 pavucontrol &
+qjackctl &
 
-exec i3 2>&1 >> ~/.i3/log
+exec i3 2>&1 >~/.i3/log

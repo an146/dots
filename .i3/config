@@ -23,6 +23,8 @@ set $j jack0
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font $font
 
+new_window 1pixel
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
