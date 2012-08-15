@@ -17,7 +17,7 @@ set $i Im
 set $o sOund
 set $u mUsic
 set $w Web
-set $j jack0
+set $c jaCk
 
 # font for window titles. ISO 10646 = Unicode
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -34,10 +34,18 @@ assign [class="Pidgin"] $i
 assign [class="Audacious"] $u
 assign [class="Gnome-alsamixer"] $o
 assign [class="Pavucontrol"] $o
-assign [class="Qjackctl"] $j
+assign [class="Qasmixer"] $o
+assign [class="Qjackctl"] $c
 
 # start a terminal
 bindsym $mod+Return exec $term
+bindsym Ctrl+minus exec amixer set Master 5%-
+bindsym Ctrl+equal exec amixer set Master 5%+
+bindsym $mod+minus exec amixer set Master 5%-
+bindsym $mod+equal exec amixer set Master 5%+
+
+# lock
+bindsym $mod+Shift+backslash exec i3lock
 
 # kill focused window
 bindsym $mod+Shift+C kill
@@ -105,7 +113,8 @@ bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace $j
+bindsym $mod+0 workspace 0
+bindsym $mod+c workspace $c
 bindsym $mod+i workspace $i
 bindsym $mod+o workspace $o
 bindsym $mod+u workspace $u
@@ -121,7 +130,8 @@ bindsym $mod+Shift+asciicircum move container to workspace 6
 bindsym $mod+Shift+ampersand move container to workspace 7
 bindsym $mod+Shift+asterisk move container to workspace 8
 bindsym $mod+Shift+parenleft move container to workspace 9
-bindsym $mod+Shift+parenright move container to workspace $j
+bindsym $mod+Shift+parenright move container to workspace 0
+# bindsym $mod+Shift+C move container to workspace $c
 bindsym $mod+Shift+I move container to workspace $i
 bindsym $mod+Shift+O move container to workspace $o
 bindsym $mod+Shift+U move container to workspace $u

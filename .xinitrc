@@ -12,7 +12,8 @@ lxterminal &
 audacious &
 
 # Sound stuff
-gnome-alsamixer &
+# gnome-alsamixer &
+qasmixer &
 pavucontrol &
 qjackctl &
 

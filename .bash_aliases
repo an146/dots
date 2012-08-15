@@ -11,6 +11,7 @@ alias rc.d='sudo rc.d'
 alias netcfg='sudo netcfg'
 alias mp='mplayer'
 alias X='exec startx'
+alias git='hub'
 
 # GStreamer
 alias gstl='gst-launch-1.0'

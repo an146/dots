@@ -10,6 +10,7 @@
     export MANPATH="$MANPATH:/opt/erlang/current/lib/erlang/man"
 }
 export PATH="$PATH:/home/anton/.gem/ruby/1.9.1/bin"
+export PATH="$PATH:/home/anton/.cabal/bin"
 
 export EDITOR=vim
 
